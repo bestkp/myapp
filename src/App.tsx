@@ -1,21 +1,29 @@
-import { Button } from 'antd';
+import Header from 'components/header/Header'
+import Rank from 'components/rank/Rank'
+import Recommand from 'components/recommand/Recommand'
+import Search from 'components/search/Search'
+import Singer from 'components/singer/Singer'
+import Tab from 'components/tab/Tab'
 import React from 'react';
+import {Redirect, Route, Switch} from 'react-router'
 import './App.scss';
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <h1>
-          <Button type="primary">button</Button>
-        </h1>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Tab/>
+      <Switch>
+        <Route
+          exact={true}
+          path="/"
+          render={() => <Redirect to="/recommand" />}
+        />
+        <Route path="/recommand" component={Recommand}/>
+        <Route path="/rank" component={Rank}/>
+        <Route path="/search" component={Search}/>
+        <Route path="/singer" component={Singer}/>
+      </Switch>
     </div>
   );
 };

@@ -1,0 +1,14 @@
+@import "common/style/variable.scss";
+
+.loading{
+  width: 100%;
+  text-align: center;
+  &-img {
+    width: 24px;
+  }
+  &-text{
+    line-height: 20px;
+    font-size: $font-size-small;
+    color: $color-text-l;
+  }
+}

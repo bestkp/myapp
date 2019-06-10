@@ -10,6 +10,10 @@
 		"ordered-imports": true,
 		"interface-name": [true, "never-prefix"]
 	},
+  "jsRules": {
+    "no-debugger": false,
+    "no-console": false
+  },
 	"linterOptions": {
 		"exclude": ["config/**/*.js", "node_modules/**/*.ts"]
 	}
