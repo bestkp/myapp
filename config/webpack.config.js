@@ -279,8 +279,10 @@ module.exports = function(webpackEnv) {
         'api':paths.appApi,
         'reuse':paths.appReusablecomponents,
         'actions':paths.appActions,
+        'types':paths.appTypes,
         'reducers':paths.appReducers,
-        'store':paths.appStore
+        'store':paths.appStore,
+        'containers':paths.appContainers,
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding

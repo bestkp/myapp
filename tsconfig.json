@@ -9,8 +9,10 @@
 			"api/*": ["api/*"],
 			"reuse/*": ["app/reusablecomponents/*"],
 			"actions/*": ["app/actions/*"],
+			"types/*": ["app/types/*"],
 			"reducers/*": ["app/reducers/*"],
-			"store/*": ["app/store/*"]
+			"store/*": ["app/store/*"],
+			"containers/*": ["app/containers/*"]
 		},
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,

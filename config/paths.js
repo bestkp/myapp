@@ -74,10 +74,12 @@ module.exports = {
 	appCommon: resolveApp('src/common'),
 	appApi: resolveApp('src/api'),
 	appActions: resolveApp('src/app/actions'),
+  appTypes: resolveApp('src/app/types'),
 	appReducers: resolveApp('src/app/reducers'),
 	appReusablecomponents: resolveApp('src/app/reusablecomponents'),
 	appStore: resolveApp('src/app/store'),
 	appRouter: resolveApp('src/router'),
+  appContainers: resolveApp('src/app/containers'),
 
 	appTsConfig: resolveApp('tsconfig.json'),
 	appTsLint: resolveApp('tslint.json'),

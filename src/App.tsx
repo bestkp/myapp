@@ -1,9 +1,9 @@
 import Header from 'components/header/Header'
-import Rank from 'components/rank/Rank'
 import Recommand from 'components/recommand/Recommand'
 import Search from 'components/search/Search'
 import Singer from 'components/singer/Singer'
 import Tab from 'components/tab/Tab'
+import Rank from 'containers/Rank'
 import React from 'react';
 import {Redirect, Route, Switch} from 'react-router'
 import './App.scss';
